@@ -1,0 +1,123 @@
+.page {
+  background: url("./assect/bg-2.png") no-repeat center center/ cover;
+  max-width: 100%;
+  height: 100%;
+  padding: 10px;
+
+
+  .row-contain{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    li a{
+      padding: 10px 20px;
+      margin-right: 5px;
+    }
+}
+  
+
+  .icon{
+    span{
+      position: absolute;
+    padding: 10px;
+    background: #42a4ee;
+    border-radius: 3rem;
+    line-height: 8px;
+    color: wheat;
+    }
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 10px 100px;
+    margin-bottom: 30px;
+  }
+  
+  h1{
+    text-align: center;
+    color: #fff;
+    // padding: 20px 0;
+  }
+
+  .card-wrapper {
+    width: 280px;
+    border: 1px solid gray;
+    .text-wrapper{
+      text-align: center;
+      color: #fff;
+      margin-bottom: 10px;
+      
+    }
+    .btn-wrapper{
+      text-align: center;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    button {
+      font-size: 13px;
+  }
+}
+
+.box {
+  background: #ffc64f30;
+  mix-blend-mode: normal;
+  backdrop-filter: blur(13.5914px);
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  z-index: 0;
+  img {
+    margin-right: 10px;
+  }
+
+  p {
+    padding-left: 10px;
+    border-left: 1px solid #ffc74fbd;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0px;
+    width: 100%;
+  }
+}
+.sec2 {
+  .content {
+    margin-top: 200px;
+    padding: 0 14px;
+    h1 {
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 46px;
+      color: #fff;
+      margin-bottom: 0px;
+    }
+    p {
+      color: #ffc64f;
+      font-size: 22px;
+      line-height: 22px;
+    }
+    small {
+      color: #fff;
+    }
+  }
+  .card {
+    margin: 0 auto;
+  }
+
+
+
+
+}
+
+}

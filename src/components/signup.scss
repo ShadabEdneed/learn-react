@@ -1,0 +1,34 @@
+.social-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+   
+    span{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    input{
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        background: #ffc7bf;
+        &:focus{
+            box-shadow: 2px solid #ffc7bf;
+            border: none;
+            outline: none;
+        }
+    }
+    button{
+        background-color: #ff7865;
+    }
+}
+.form-container{
+    h1{
+        text-align: center;
+        display: block;
+    }
+}

@@ -1,0 +1,1308 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MedievalSharp", cursive;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// :-ms-input-placeholder {
+//   color: $dgray;
+//   font-weight: 400;
+//   font-size: 14px;
+//   text-transform: none !important;
+// }
+// ::-webkit-input-placeholder {
+//   color: $dgray;
+//   font-weight: 400;
+//   font-size: 14px;
+//   text-transform: none !important;
+// }
+// /* Chrome, Safari, Edge, Opera */
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   margin: 0;
+//   opacity: 0;
+// }
+
+// /* Firefox */
+// input[type="number"] {
+//   -moz-appearance: textfield;
+// }
+// textarea::placeholder {
+//   color: $dgray;
+//   font-weight: 400;
+//   font-size: 14px;
+//   text-transform: none !important;
+// }
+// textarea:-ms-input-placeholder {
+//   color: $dgray;
+//   font-weight: 400;
+//   font-size: 14px;
+//   text-transform: none !important;
+// }
+// textarea::-webkit-input-placeholder {
+//   color: $dgray;
+//   font-weight: 400;
+//   font-size: 14px;
+//   text-transform: none !important;
+// }
+// input[type="search"]::-webkit-search-cancel-button {
+//   position: relative;
+//   cursor: pointer;
+//   padding: 3px;
+// }
+// ::placeholder {
+//   color: $dgray;
+//   font-weight: 400;
+//   font-size: 14px;
+//   text-transform: none !important;
+// }
+// textarea {
+//   @extend .w-700;
+//   @extend .text-sm;
+//   font-family: $font;
+//   resize: vertical;
+//   // min-height: 100px;
+//   width: 100%;
+//   border: 1px solid $mgray;
+//   border-radius: 4px;
+//   padding: 15px;
+//   text-transform: none;
+//   &:focus,
+//   &:active {
+//     border: 1px solid $base;
+//     text-transform: none;
+//   }
+//   &.form-control {
+//     text-transform: none;
+//     @extend .text-sm;
+//     @extend .w-700;
+//     line-height: 1.75;
+//   }
+// }
+// form {
+//   width: 100%;
+// }
+// button,
+// [type="button"],
+// [type="reset"],
+// [type="submit"] {
+//   -webkit-appearance: button;
+//   font-family: $font;
+//   cursor: pointer;
+//   &:hover {
+//     transition: all 0.25s ease;
+//   }
+// }
+// .form-group {
+//   position: relative;
+//   margin-bottom: 20px;
+// }
+// .animLabel {
+//   position: absolute;
+//   top: 0;
+//   background-color: $white;
+//   padding: 2px 10px;
+//   color: $base;
+//   left: 12px;
+//   top: -12px;
+//   text-transform: capitalize;
+//   @extend .text-xs;
+//   @extend .w-500;
+//   opacity: 0;
+//   transition: all 0.2s ease;
+// }
+// label {
+//   &.hidden {
+//     position: absolute;
+//     font-size: 1px;
+//     text-indent: -9999px;
+//   }
+// }
+
+// .form-control {
+//   border-radius: 4px;
+//   border: 1px solid $mgray;
+//   height: 44px;
+//   padding: 10px 20px;
+//   width: 100%;
+//   color: $base;
+//   @extend .w-700;
+//   position: relative;
+//   @extend .text-sm;
+//   outline: 0;
+//   outline: none;
+//   box-shadow: none;
+//   &:active,
+//   &:focus {
+//     border-color: $dgray;
+//   }
+
+//   &.calender-input {
+//     padding: 10px 20px;
+//     height: 44px;
+//     @extend .text-regf;
+//     border: 1px solid $mgray;
+//     border-radius: 4px;
+//   }
+// }
+// hr {
+//   border: 0;
+//   background: transparent;
+//   border-top: 1px solid rgba($mgray, 0.5);
+//   box-shadow: none;
+// }
+// textarea {
+//   &.form-control {
+//     height: auto;
+//   }
+// }
+// .form-control:focus + .animLabel {
+//   opacity: 1;
+// }
+// .form-control:not(:placeholder-shown) + .animLabel {
+//   opacity: 1;
+// }
+// .react-tel-input:focus + .animLabel {
+//   opacity: 1;
+// }
+// .react-tel-input:not(:placeholder-shown) + .animLabel {
+//   opacity: 1;
+// }
+// textarea:focus + .animLabel {
+//   opacity: 1;
+// }
+// textarea:not(:placeholder-shown) + .animLabel {
+//   opacity: 1;
+// }
+
+// // .cstmSelectWrap select:focus ~ .animLabel {
+// //   opacity: 1;
+// // }
+// // .cstmSelectWrap select:not(:placeholder-shown) + .animLabel {
+// //   opacity: 1;
+// // }
+// // .cstmSelectWrap select:not([value=""]):valid + .animLabel {
+// //   opacity: 1;
+// // }
+
+// .select_label_ani {
+//   .animLabel {
+//     opacity: 0;
+//   }
+// }
+// .select_label_ani > select:focus + .animLabel {
+//   opacity: 1;
+// }
+
+// .select_label_ani > select:valid + .animLabel {
+//   opacity: 1;
+// }
+
+// .form-control-flag {
+//   border-radius: 3px;
+//   border: 1px solid #ededed;
+//   padding: 10px 20px 10px 70px;
+//   width: 100%;
+//   color: #262626;
+//   @extend .w-700;
+//   @extend .text-sm;
+//   letter-spacing: 0;
+// }
+// .cstmSelectWrap {
+//   position: relative;
+//   &::before {
+//     height: 6px;
+//     width: 6px;
+//     border-width: 2px 0 0 2px;
+//     border-style: solid;
+//     border-color: $dgray;
+//     transform: rotate(-135deg);
+//     left: 15px;
+//     position: relative;
+//     transition: all 0.25s ease;
+//     position: absolute;
+//     top: 17px;
+//     color: $base;
+//     pointer-events: none;
+//   }
+//   select {
+//     background-color: $white;
+//     color: $base;
+//     padding: 12px 15px 12px 30px;
+//     width: 100%;
+//     border-radius: 3px;
+//     border: 1px solid $mgray;
+//     -webkit-appearance: button;
+//     appearance: button;
+//     outline: none;
+//     cursor: pointer;
+//     @extend .w-700;
+//     @extend .text-sm;
+//     option {
+//       padding: 20px;
+//     }
+//     &::-ms-expand {
+//       display: none;
+//     }
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     &:focus {
+//       border: 1px solid $dgray;
+//     }
+//   }
+//   option:checked {
+//     color: $primary;
+//   }
+// }
+
+// .cstmPhoneInput {
+//   position: relative;
+//   .react-tel-input {
+//     border: 1px solid grey;
+//     border-radius: 4px;
+//     font-family: $font;
+//     .form-control {
+//       width: 100%;
+//       border: 1px solid transparent;
+//       height: 44px;
+//       padding: 10px 20px 10px 60px;
+//       width: 100%;
+//       color: #121212;
+//       outline: 0;
+//       box-shadow: none;
+//       @extend .text-sm;
+//     }
+//     .selected-flag {
+//       width: 60px;
+//       padding: 0 0 0 20px;
+//       .arrow {
+//         border-width: none;
+//         border-left: 5px solid transparent;
+//         border-right: 5px solid transparent;
+//         border-top: 6px solid $gray;
+//         &.up {
+//           border-bottom: 6px solid $gray;
+//         }
+//       }
+//     }
+//     .flag-dropdown {
+//       background-color: transparent;
+//       border: none;
+//     }
+//   }
+//   .country-list {
+//     text-align: left;
+//   }
+//   .errorInputMsg {
+//     bottom: -17px;
+//   }
+// }
+
+// .form-control input:focus ~ .special-label {
+//   display: block;
+// }
+// .form-control input:not(:placeholder-shown) + .special-label {
+//   display: block;
+// }
+// .form-control input:not([value=""]):valid + .special-label {
+//   display: block;
+// }
+
+// .table-h-grid-1 {
+//   .selectTextType {
+//     margin-left: 20px;
+//   }
+// }
+// .selectTextType {
+//   position: relative;
+//   // margin-bottom: 20px;
+//   &:before {
+//     height: 6px;
+//     width: 6px;
+//     border-width: 2.25px 0 0 2.25px;
+//     border-style: solid;
+//     border-color: $gray;
+//     transform: rotate(-135deg);
+//     left: 5px;
+//     position: relative;
+//     transition: all 0.25s ease;
+//     position: absolute;
+//     top: 4px;
+//     bottom: 13px;
+//     pointer-events: none;
+//   }
+//   select {
+//     // background-color: $white;
+//     // color: $gray;
+//     padding: 0 20px;
+//     @extend .text-regf;
+//     @extend .w-500;
+//     width: auto;
+//     border-radius: 3px;
+//     border: none;
+//     -webkit-appearance: button;
+//     appearance: button;
+//     outline: none;
+//     cursor: pointer;
+//     option {
+//       padding: 20px;
+//     }
+//     &::-ms-expand {
+//       display: none;
+//     }
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//   }
+// }
+// .form-control-flag {
+//   border-radius: 3px;
+//   border: 1px solid #ededed;
+//   padding: 10px 20px 10px 70px;
+//   width: 100%;
+//   color: #262626;
+//   @extend .w-700;
+//   @extend .text-sm;
+//   letter-spacing: 0;
+// }
+
+// .button {
+//   display: inline-flex;
+//   text-align: center;
+//   @extend .w-400;
+//   white-space: nowrap;
+//   vertical-align: middle;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   border: 0;
+//   padding: 0 15px;
+//   align-items: center;
+//   justify-content: center;
+//   height: 44px;
+//   transition: all 0.25s ease;
+//   width: auto;
+//   max-width: 100%;
+//   @extend .text-rdf;
+//   line-height: 2;
+//   border-radius: 4px;
+//   margin-left: 1px;
+//   margin-right: 1px;
+//   cursor: pointer;
+//   &.button-theme {
+//     @extend .w-400;
+//     // margin-right: 8px;
+//     color: $white;
+//     border-width: 1px;
+//     border-color: transparent;
+//     background: linear-gradient(75deg, $primary 0%, $secondary 100%);
+//     &:hover {
+//       background: linear-gradient(135deg, $primary 30%, $secondary 60%);
+//     }
+//   }
+//   &.button-primary {
+//     color: $white;
+//     background-color: $primary;
+//     border-color: $primary;
+//     &:hover {
+//       background-color: $primary;
+//     }
+//   }
+//   &.button-white {
+//     background-color: $white;
+//     border-color: $white;
+//     &:hover {
+//       background-color: $white;
+//     }
+//   }
+//   &.button-base {
+//     color: $white;
+//     background-color: $base;
+//     border-color: $base;
+//     &:hover {
+//       background-color: $base;
+//     }
+//   }
+//   &.button-secondary {
+//     color: $white;
+//     background-color: $secondary;
+//     border-color: $secondary;
+//     &:hover {
+//       background-color: $secondary;
+//     }
+//   }
+//   &.button-gray {
+//     color: $white;
+//     background-color: $gray;
+//     border-color: $gray;
+//     &:hover {
+//       background-color: $gray;
+//     }
+//   }
+//   &.button-red {
+//     color: $white;
+//     background-color: $red;
+//     border-color: $red;
+//     &:hover {
+//       background-color: rgba($red, 0.2);
+//     }
+//   }
+//   &.button-bsPink {
+//     color: $white;
+//     background-color: $bsPink;
+//     border-color: $bsPink;
+//     &:hover {
+//       background-color: $bsPink;
+//     }
+//   }
+//   &.button-silver {
+//     color: $base;
+//     background-color: $silver;
+//     border-color: $silver;
+//     &:hover {
+//       background-color: $silver;
+//     }
+//   }
+//   &.button-purple {
+//     color: $white;
+//     background-color: $purple;
+//     border-color: $purple;
+//     &:hover {
+//       background-color: $purple;
+//     }
+//   }
+//   &.button-o-primary {
+//     border-color: $primary;
+//     background-color: $white;
+//     border-width: 1px;
+//     border-style: solid;
+//     &:hover {
+//       background-color: rgba($primary, 0.1);
+//       border-color: rgba($primary, 0.5);
+//     }
+//   }
+//   &.button-o-secondary {
+//     border-color: $secondary;
+//     background-color: $white;
+//     border-width: 1px;
+//     border-style: solid;
+//     &:hover {
+//       // background-color: rgba($silver, 0.25);
+//       background-color: $secondary;
+//       color: $white;
+//     }
+//   }
+//   &.button-o-gray {
+//     border-color: $gray;
+//     background-color: $white;
+//     border-width: 1px;
+//     border-style: solid;
+//     &:hover {
+//       background-color: rgba($gray, 0.25);
+//     }
+//   }
+//   &.button-o-base {
+//     border-color: $base;
+//     background-color: $white;
+//     border-width: 1px;
+//     border-style: solid;
+//     &:hover {
+//       background-color: $base;
+//       color: $white;
+//     }
+//   }
+//   &.button-o-purple {
+//     border-color: $purple;
+//     background-color: $white;
+//     border-width: 1px;
+//     border-style: solid;
+//     &:hover {
+//       background-color: $purple;
+//       color: $white;
+//     }
+//   }
+//   &.smlSlickBtn {
+//     @extend .text-regf;
+//   }
+//   &.button-o-mgray {
+//     border-color: $mgray;
+//     background-color: $white;
+//     border-width: 1px;
+//     @extend .w-500;
+//     border-style: solid;
+
+//     &.primary {
+//       color: $primary;
+//     }
+//     &.secondary {
+//       color: $secondary;
+//     }
+//     &.purple {
+//       color: $purple;
+//     }
+//     &.bspink {
+//       color: $purple;
+//     }
+//     &:hover {
+//       background-color: $mgray;
+//       color: $white;
+//     }
+//   }
+//   &.button-o-red {
+//     border-color: $red;
+//     background-color: $white;
+//     border-width: 1px;
+//     border-style: solid;
+//     &:hover {
+//       background-color: rgba($red, 0.2);
+//       border-color: rgba($red, 0.2);
+//     }
+//   }
+//   &.button-o-bsPink {
+//     border-color: $bsPink;
+//     background-color: $white;
+//     border-width: 1px;
+//     border-style: solid;
+//     &:hover {
+//       background-color: rgba($bsPink, 0.25);
+//     }
+//   }
+//   &.button-o-silver {
+//     border-color: rgba($gray, 0.33);
+//     background-color: $white;
+//     border-width: 1px;
+//     border-style: solid;
+//     @extend .w-500;
+//     &.primary {
+//       color: $primary;
+//     }
+//     &.secondary {
+//       color: $secondary;
+//     }
+//     &.gray {
+//       color: $gray;
+//     }
+//     &.mgray {
+//       color: $mgray;
+//     }
+//     &.lgray {
+//       color: $lgray;
+//     }
+//   }
+//   &.button-sm {
+//     @extend .text-s;
+//     height: 36px;
+//     line-height: 1;
+//   }
+//   &.button-xs {
+//     @extend .text-s;
+//     height: 30px;
+//     line-height: 1;
+//   }
+//   &.button-block {
+//     display: inline-flex;
+//     width: 100%;
+//   }
+//   &.btn-disable {
+//     pointer-events: none;
+//   }
+//   &.btn-oval {
+//     border-radius: 25px;
+//   }
+// }
+// button:disabled {
+//   background-color: inherit;
+//   opacity: 0.5;
+//   pointer-events: none;
+// }
+
+// .actionBtnCustom {
+//   text-align: right;
+//   .groupBtn {
+//     display: inline-flex;
+//     flex-flow: row wrap;
+//     align-items: center;
+//     justify-content: space-between;
+//     border: 1px solid rgba($mgray, 0.5);
+//     border-radius: 4px;
+//     button,
+//     a {
+//       border: 0;
+//       padding: 6px 10px;
+//       border-right: 1px solid rgba($mgray, 0.5);
+//       background-color: transparent;
+//       // color: $mgray;
+//       transition: all 0.25s ease;
+//       @extend .text-s;
+//       @extend .w-500;
+//       &:last-child {
+//         border-right: 0;
+//       }
+//       &:hover {
+//         background-color: $mgray;
+//         color: $white;
+//       }
+//       &.grpBtnPurple {
+//         border-right: transparent;
+//         color: $white;
+//         background-color: $purple;
+//         &:hover {
+//           background-color: $purple;
+//           color: $white;
+//         }
+//         &:last-child {
+//           border-right: 0;
+//         }
+//       }
+//       &.grpBtnPurpleOutline {
+//         color: $purple;
+//         &:hover {
+//           background-color: $purple;
+//           color: $white;
+//         }
+//         &:last-child {
+//           border-right: 0;
+//         }
+//       }
+//       &.grpBtnGray {
+//         border-right: transparent;
+//         color: $white;
+//         background-color: $mgray;
+//         &:hover {
+//           background-color: $mgray;
+//           color: $white;
+//         }
+//         &:last-child {
+//           border-right: 0;
+//         }
+//       }
+//       &.grpBtnPrimary {
+//         border-right: transparent;
+//         color: $white;
+//         background: $white;
+//         color: $primary;
+//         border-right: 1px solid rgba($mgray, 0.5);
+//         &:hover {
+//           background-color: $primary;
+//           color: $white;
+//         }
+//         &:last-child {
+//           border-right: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .button,
+// .btnText {
+//   .animate-r-arrow-icon {
+//     height: 8px;
+//     width: 8px;
+//     border-width: 2px 0 0 2px;
+//     border-style: solid;
+//     transform: rotate(135deg);
+//     left: 5px;
+//     position: relative;
+//     transition: all 0.25s ease;
+//     border-color: initial;
+//     display: inline-block;
+//     cursor: pointer;
+//     top: 1px;
+//     &.back-i {
+//       transform: rotate(-45deg);
+//       left: -2px;
+//     }
+//   }
+
+//   &:hover {
+//     i {
+//       left: 5px;
+//       &.back-i {
+//         left: -5px;
+//       }
+//     }
+//   }
+// }
+// .btnText {
+//   background-color: transparent;
+//   outline: 0;
+//   outline: none;
+//   border: none;
+//   cursor: pointer;
+//   display: inline-flex;
+//   align-items: center;
+//   .animate-r-arrow-icon {
+//     top: -1px;
+//   }
+// }
+// .button {
+//   i {
+//     margin-right: 5px;
+//     display: inline-block;
+//   }
+// }
+// .cstm-switch {
+//   position: relative;
+//   display: inline-block;
+//   z-index: 0;
+//   // margin: 10px;
+//   input[type="checkbox"] {
+//     display: none;
+//   }
+//   label {
+//     display: inline-block;
+//     height: 24px;
+//     position: relative;
+//     cursor: pointer;
+//     z-index: 0;
+//     i {
+//       height: 20px;
+//       width: 20px;
+//       z-index: 10;
+//       top: 3px;
+//       left: 24px;
+//       position: absolute;
+//       font-style: normal;
+//       &:before {
+//         content: "OFF";
+//         position: absolute;
+//         @extend .w-700;
+//         font-size: 12.44px;
+//         text-transform: uppercase;
+//         letter-spacing: 0;
+//       }
+//     }
+//   }
+//   label::before,
+//   label::after {
+//     content: "";
+//     position: absolute;
+//   }
+//   label::before {
+//     width: 60px;
+//     left: 0;
+//     top: -3px;
+//     height: 100%;
+//     border-radius: 30px;
+//     transition: background-color 0.25s ease;
+//     border: 1px solid #80868b;
+//     background-color: #fff;
+//   }
+//   label::after {
+//     top: 3px;
+//     left: 8px;
+//     width: 14px;
+//     height: 14px;
+//     border-radius: 50%;
+//     background-color: #80868b;
+//     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+//     transition: left 0.25s ease;
+//   }
+//   input[type="checkbox"]:checked + label i {
+//     left: 15px;
+//     &:before {
+//       content: "On";
+//       color: #14a032;
+//     }
+//   }
+//   input[type="checkbox"]:checked + label::before {
+//     border: 1px solid #14a032;
+//     i {
+//       left: 36px;
+//     }
+//   }
+//   input[type="checkbox"]:checked + label::after {
+//     left: 40px;
+//     background: #14a032;
+//   }
+// }
+// .errorInput {
+//   border: 1px solid rgba($red, 0.25);
+// }
+// .datePickerWrap {
+//   &.errorInputDateTimePicker {
+//     input[type="text"] {
+//       border: 1px solid rgba($red, 0.25);
+//     }
+//   }
+// }
+// .formFieldwrap {
+//   position: relative;
+//   padding: 0;
+//   padding-bottom: 30px;
+
+//   .form-group {
+//     margin-bottom: 0;
+//   }
+// }
+// .errorInputMsg {
+//   position: absolute;
+//   left: 0;
+//   top: auto;
+//   width: 100%;
+//   text-align: left;
+//   line-height: 1.125;
+//   padding-top: 5px;
+//   @extend .text-xxs;
+//   color: $red;
+//   &.textareaError {
+//     top: auto;
+//     bottom: 12px;
+//   }
+// }
+
+// .file-input-wrapper {
+//   margin: 5px 0;
+//   position: relative;
+//   overflow: hidden;
+//   cursor: pointer;
+//   background-color: $white;
+//   .file-input-overlap {
+//     border-radius: 4px;
+//     border: 1px solid rgba($dgray, 0.5);
+//     height: 44px;
+//     line-height: 1.4;
+//     padding: 10px 20px;
+//     width: 100%;
+//     color: $base;
+//     @extend .w-500;
+//     @extend .text-rdf;
+//     cursor: pointer;
+//     display: flex;
+//     align-items: center;
+//     gap: 5px;
+//   }
+//   .file-input-overlapText {
+//     color: $primary;
+//     @extend .w-500;
+//     display: inline-block;
+//     @extend .text-s;
+//     cursor: pointer;
+//   }
+//   input[type="file"] {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     opacity: 0;
+//     cursor: pointer;
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
+
+// .attachment {
+//   @extend .text-rdf;
+//   color: $base;
+//   @extend .w-500;
+//   span {
+//     display: flex;
+//     align-items: center;
+//     img {
+//       width: 12px;
+//       margin-right: 5px;
+//     }
+//   }
+// }
+
+// .labelcst {
+//   padding-bottom: 5px;
+//   display: inline-block;
+// }
+// .textarea-bottom-text {
+//   position: absolute;
+// }
+// .cstmSelectWrap {
+//   &.errorInput {
+//     border-radius: 3px;
+//     select {
+//       border-color: transparent;
+//     }
+//   }
+// }
+// .attachmentwithtext {
+//   display: flex;
+//   align-items: center;
+//   margin-top: 3px;
+//   gap: 5px;
+// }
+
+// .CropUploadBtn {
+//   justify-content: flex-start;
+//   i {
+//     margin-right: 0;
+//   }
+// }
+// // .CheckInput {
+// //   label {
+// //     position: absolute;
+// //     left: 30px;
+// //     top: 4px;
+// //   }
+// // }
+// // input[type="checkbox"] {
+// //   position: relative;
+// //   cursor: pointer;
+// // }
+// // input[type="checkbox"]:before {
+// //   content: "";
+// //   display: block;
+// //   position: absolute;
+// //   width: 18px;
+// //   height: 18px;
+// //   top: 0;
+// //   left: 0;
+// //   border: 2px solid $base;
+// //   background-color: white;
+// // }
+// // input[type="checkbox"]:checked:before {
+// //   border-color: #1e80ef;
+// // }
+// // input[type="checkbox"]:checked:after {
+// //   content: "";
+// //   display: block;
+// //   width: 5px;
+// //   height: 10px;
+// //   border: solid $primary;
+// //   border-width: 0 2px 2px 0;
+// //   -webkit-transform: rotate(45deg);
+// //   -ms-transform: rotate(45deg);
+// //   transform: rotate(45deg);
+// //   position: absolute;
+// //   top: 3px;
+// //   left: 7px;
+// // }
+// // .modal {
+// //   .datePickerWrap {
+// //     z-index: 1200;
+// //   }
+// // }
+// .datePickerWrap {
+//   position: relative;
+//   padding: 0 0 30px;
+//   // z-index: 0;
+//   input[type="text"] {
+//     border-radius: 4px;
+//     border: 1px solid $mgray;
+//     height: 44px;
+//     padding: 10px 20px 10px 50px;
+//     width: 100%;
+//     color: $base;
+//     @extend .w-700;
+//     position: relative;
+//     @extend .text-sm;
+//     outline: 0;
+//     outline: none;
+//     box-shadow: none;
+//     cursor: pointer;
+//     font-family: $font;
+//   }
+//   .animLabel {
+//     position: absolute;
+//     left: 10px;
+//     top: -10px;
+//     opacity: 1;
+//   }
+//   .calendarDates {
+//     box-sizing: border-box;
+//     position: absolute;
+//     display: block;
+//     width: 20px;
+//     height: 20px;
+//     border: 1px solid $dgray;
+//     border-radius: 3px;
+//     left: 20px;
+//     top: 13px;
+//     pointer-events: none;
+//     outline: 0;
+//     outline: none;
+//   }
+//   .calendarDates::after,
+//   .calendarDates::before {
+//     content: "";
+//     display: block;
+//     box-sizing: border-box;
+//     position: absolute;
+//     border-radius: 3px;
+//     height: 2px;
+//     left: 4px;
+//   }
+//   .calendarDates::before {
+//     background: $dgray;
+//     width: 2px;
+//     box-shadow: 4px 0 0, 8px 0 0, 0 4px 0, 4px 4px 0, 8px 4px 0;
+//     top: 7px;
+//   }
+//   .calendarDates::after {
+//     width: 10px;
+//     top: -4px;
+//     box-shadow: 0 6px 0 0;
+//   }
+//   .react-datepicker-wrapper {
+//     width: 100%;
+//   }
+//   .react-datepicker__triangle {
+//     left: 50px !important;
+//   }
+//   .react-datepicker-popper {
+//     z-index: 1;
+//   }
+// }
+// // TableSortBy
+// .SortByTableHeadCst {
+//   label {
+//     margin-right: 5px;
+//   }
+//   select {
+//     font-size: 15px;
+//     padding: 5px;
+//     border-radius: 5px;
+//     border-color: $mgray;
+//     cursor: pointer;
+//     option {
+//       @extend .text-s;
+//     }
+//   }
+// }
+// // close TableSortBy
+// //SELECT iNPUT GROUP
+// .select-input-group {
+//   border: 1px solid $mgray;
+//   border-radius: 4px;
+//   display: grid;
+//   grid-template-columns: 1fr 2fr;
+//   .form-control {
+//     border: 0;
+//   }
+//   select {
+//     &.form-control {
+//       padding: 10px 13px 10px 7px;
+//       @extend .text-xs;
+//       width: fit-content;
+//     }
+//   }
+// }
+// .form-control {
+//   &:focus {
+//     .animLabel {
+//       opacity: 1;
+//     }
+//   }
+// }
+// .fileuploadNameTxt {
+//   color: $dgray;
+//   @extend .text-s;
+//   @extend .w-500;
+//   line-height: 120%;
+//   padding-top: 20px;
+// }
+// //CLOSE SELECT iNPUT GROUP
+// .CoundownOTP,
+// .ResendOTP {
+//   position: absolute;
+//   left: 0;
+//   padding: 15px 20px 10px 0;
+//   .underline {
+//     padding-top: 0;
+//   }
+// }
+// .formFieldwrap {
+//   &.LoginVerifyFieldWrap {
+//     padding-bottom: 70px;
+//   }
+// }
+// .InputOverlayRightAlign {
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   padding: 15px 20px 10px 0;
+//   text-decoration: underline;
+// }
+// .ResendOTP {
+//   @extend .text-xxs;
+//   color: $primary;
+// }
+// .CoundownOTP {
+//   @extend .text-xs;
+//   text-decoration: none;
+// }
+
+// .displayFrmSwitchItem {
+//   display: flex;
+//   align-items: center;
+//   &.inline {
+//     flex-direction: row;
+//   }
+//   li:not(:first-child) {
+//     margin-left: 20px;
+//   }
+//   label {
+//     @extend .w-600;
+//     @extend .text-s;
+//     padding: 5px;
+//     cursor: pointer;
+//   }
+// }
+// .formItemActionWrap {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   width: 100%;
+//   .showDateRange {
+//     width: 100%;
+//     max-width: 500px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     padding-left: 15px;
+//     li {
+//       margin-right: 20px;
+//       padding-top: 10px;
+//     }
+//     .datePickerWrap {
+//       padding-bottom: 10px;
+//     }
+//   }
+// }
+// .itemLableCheckText {
+//   span {
+//     margin-left: 10px;
+//     @extend .w-500;
+//   }
+// }
+// @media all and (max-width: 667px) {
+//   .displayFrmSwitchItem {
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     &.inline {
+//       flex-direction: column;
+//     }
+//     li {
+//       display: flex;
+//       width: 100%;
+//       justify-content: flex-start;
+//       margin: 5px 0;
+//       input[type="radio"] {
+//         position: relative;
+//         top: 5px;
+//       }
+//       &:not(:first-child) {
+//         margin-left: 0;
+//       }
+//     }
+//   }
+//   .formItemActionWrap {
+//     width: 100%;
+//     .showDateRange {
+//       flex-direction: column;
+//       li {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }
+
+// //  START CODE FOR ACCRODIAN DETAILS SUMMARY SECTION HERE ================
+// .accrodian-list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 1rem;
+//   details {
+//     padding: 0.5rem 0;
+//     summary {
+//       cursor: pointer;
+//       padding: 0.5rem 1.25rem;
+//       @extend .text-s;
+//       @extend .w-600;
+//       line-height: 1.25;
+//       list-style: none;
+//       position: relative;
+//       display: inline-flex;
+//       &:before {
+//         border: solid $base;
+//         border-width: 0 2px 2px 0;
+//         display: inline-block;
+//         padding: 4px;
+//         transform: rotate(45deg);
+//         -webkit-transform: rotate(45deg);
+//         left: 0;
+//         top: 10px;
+//       }
+//     }
+//     .content {
+//       margin-left: 1.25rem;
+//       padding-bottom: 0.5rem;
+//       border-bottom: 1px solid rgba($base, 0.125);
+//     }
+//     &[open] {
+//       color: $primary;
+//       summary {
+//         &:before {
+//           top: 15px;
+//           border: solid $primary;
+//           border-width: 0 2px 2px 0;
+//           transform: rotate(-135deg);
+//           -webkit-transform: rotate(-135deg);
+//         }
+//       }
+//       .content {
+//         color: $base;
+//       }
+//     }
+//   }
+// }
+// //  END CODE FOR ACCRODIAN DETAILS SUMMARY SECTION HERE ==================
+// .info-button-sqaure {
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0.625rem 0.5rem;
+//   background: $white;
+//   border: 1px solid rgba($primary, 0.5);
+//   border-radius: 5px;
+//   &:hover {
+//     border: 1px solid $primary;
+//     background-color: rgba($primary, 0.125);
+//   }
+//   span {
+//     display: inline-flex;
+//     height: 14px;
+//     width: 14px;
+//     justify-content: center;
+//     align-items: center;
+//     color: $primary;
+//     @extend .w-600;
+//   }
+// }
+// @import "customRadioCheckbox";

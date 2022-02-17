@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  padding: 10px;
+  h3 {
+    color: #fff;
+    margin: 0px;
+  }
+}

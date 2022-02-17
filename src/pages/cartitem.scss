@@ -1,0 +1,20 @@
+.card-wrapper {
+    width: 280px;
+    border: 1px solid gray;
+    .text-wrapper{
+      text-align: center;
+      color: rgb(0, 0, 0);
+      margin-bottom: 10px;
+      
+    }
+    .btn-wrapper{
+      text-align: center;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    button {
+      font-size: 13px;
+  }
+}
