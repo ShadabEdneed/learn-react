@@ -1,0 +1,33 @@
+
+[
+    {
+        "id": 1,
+        "name": "BMW XL90",
+        "price": "10Cr",
+        "images": "https://images.unsplash.com/photo-1583267746897-2cf415887172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXV0b21vYmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Audi",
+        "price": "9Cr",
+        "images": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+        "id": 3,
+        "name": "Range Rover",
+        "price": "45Cr",
+        "images": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+        "id": 4,
+        "name": "Kwid",
+        "price": "7Lakh",
+        "images": "https://stat.overdrive.in/wp-content/odgallery/2020/06/57263_2020_Mercedes_Benz_GLS.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Labmo",
+        "price": "8Cr",
+        "images":"https://media.zigcdn.com/media/content/2021/Jun/hyundai-alcazar-review-001_640x480.jpg"
+    }
+]

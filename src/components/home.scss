@@ -4,6 +4,11 @@
   height: 100%;
   padding: 10px;
 
+  .text-wrapper{
+    span{
+      font-family: "MedievalSharp", cursive;
+    }
+  }
 
   .row-contain{
     display: flex;
