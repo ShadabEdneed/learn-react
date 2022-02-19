@@ -1,48 +1,9 @@
 import React, { } from 'react';
 import "./home.scss";
-// import Head from "./head";
-// import dots from "./assect/more-horizontal-outline.png";
-// import card from "./assect/play--icon.png";
-// import Form from "./signup";
 import { addToCart, removeToCart } from "../Redux/services/Action/action";
 import { useDispatch } from "react-redux";
 import "../pages/edit.scss";
 import MyData from "../utility.json"
-// import car1 from "./assect/img-2.jpg";
-// import car2 from "./assect/img3.jpg";
-// import car3 from "./assect/img4.jpg";
-// import car4 from "./assect/img5.jpg";
-
-
-
-// const Data = [
-//   {
-//       image:car,
-//       name:"BMW XR Price :",
-//       price: "10Cr"
-//   },
-//   {
-//       image:car1,
-//       name:"BMW XR Price :",
-//       price: "10Cr"
-//   },
-//   {
-//       image:car2,
-//       name:"BMW XR Price :",
-//       price: "10Cr"
-//   },
-//   {
-//       image:car3,
-//       name:"BMW XR Price :",
-//       price: "10Cr"
-//   },
-//   {
-//       image:car4,
-//       name:"BMW XR Price :",
-//       price: "10Cr"
-//   }
-
-// ]
 
 
 const HomePage = () => {
@@ -70,8 +31,8 @@ const HomePage = () => {
                   <span>{item.name} :</span><span> {item.price}</span>
                 </div>
                 <div className="btn-wrapper">
-                  <button type="btn" className="effect-btn" onClick={addToCartHandle}>Add to cart</button>
-                  <button type="btn" className="effect-btn" onClick={removeToCartHandle}>Remove to cart</button>
+                  <button type="btn" className="effect-btn-theme" onClick={addToCartHandle}>Add to cart</button>
+                  <button type="btn" className="effect-btn-theme" onClick={removeToCartHandle}>Remove to cart</button>
                 </div>
               </div>
             ))

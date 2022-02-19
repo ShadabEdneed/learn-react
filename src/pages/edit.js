@@ -7,7 +7,7 @@ const Edit = () => {
     <>
     <div className='container'>
         <h1 style={{color:"black"}}>Hello edit</h1>
-        <button className="effect-btn" type='submit'>Click Me</button>
+        <button className="effect-btn-theme" type='submit'>Click Me</button>
     </div>
 
    

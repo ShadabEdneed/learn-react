@@ -11,6 +11,7 @@ import Edit from "./pages/edit";
 import List from "./pages/list";
 import Form from "./pages/form";
 import Cartitems from "./pages/cartitems";
+import Button from "./pages/buttons";
 // import { Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route path="/cartitems">
           <Cartitems />
+        </Route>
+        <Route path="/buttons">
+          <Button />
         </Route>
         <Route path="/">
           <Home />

@@ -8,12 +8,9 @@ import "./nav.scss";
 
 
 const Nav = () => {
-    const [open, setOpen] = useState(false);
     const [navbarOpen, setNavbarOpen] = useState(false)
 
-    const hamburger = () => {
-        setOpen(!open)
-    }
+  
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen)
@@ -34,7 +31,6 @@ const Nav = () => {
                 </button>
             </div>
 
-            {/* <button onClick={handleToggle}>{navbarOpen ? "Close" : "Open"}</button> */}
 
             <nav  className={`close ${navbarOpen ? " open" : ""}`}>
                 <ul>
@@ -49,6 +45,9 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link to="/form">Sign Up</Link>
+                    </li>
+                    <li>
+                        <Link to="/buttons">Button Kit</Link>
                     </li>
                 </ul>
             </nav>

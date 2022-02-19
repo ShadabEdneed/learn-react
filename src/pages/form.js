@@ -1,11 +1,11 @@
 import React from "react"
-import SyncValidationForm from "../components/synfrom"
+import Signup from "../components/signup";
 
 const Form = () =>{
     return(
-        <>
-            
-        </>
+        <div className="">
+            <Signup/>
+        </div>
     )
 }
 

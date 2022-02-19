@@ -1,6 +1,7 @@
 import React from 'react'
 import car from "../components/assect/img1.jpg";
 import "./cartitem.scss"
+import SendIcon from "@mui/icons-material"
 
 const List = () => {
   return (
@@ -13,8 +14,8 @@ const List = () => {
                 <span>BMW</span><span> 10Cr</span>
               </div>
               <div className="btn-wrapper">
-                <button type="btn" className="effect-btn" >Add to cart</button>
-                <button type="btn" className="effect-btn" >Remove to cart</button>
+                <button type="btn" className="effect-btn-theme" >Add to cart</button>
+                <button type="btn" className="effect-btn-theme" >Remove to cart</button>
               </div>
             </div>
     </div>

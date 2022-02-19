@@ -10,7 +10,6 @@ import thunk from "redux-thunk";
 import {Provider} from 'react-redux';
 import rootReducer  from './Redux/services/Reducers/reducers';
 import { composeWithDevTools } from "redux-devtools-extension";
-// const store = createStore(rootReducer);
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
