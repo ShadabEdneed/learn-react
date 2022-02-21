@@ -1,12 +1,118 @@
+$backgrouond: linear-gradient(75deg, #146efa, #14a032);
+$background-effect: linear-gradient(45deg, #14a032, #146efa);
+$rounded: 3rem;
+$success: #14a032;
+$primary: #146efa;
+$brown: #be643c;
+$info: #5028a0;
+$dark: #121212;
+$white: #fff;
 
-    $backgrouond:linear-gradient(75deg, #146efa, #14a032);
-    $backgrouond-effect:linear-gradient(45deg, #14a032,#146efa);
-    $rounded:3rem;
-    $green:#14a032;
-    $blue:#146efa;
-
-
-.kit-container{
+.btn-gradient {
+    background: $backgrouond;
+    color: $white;
+    border: none;
+}
+.btn-primary {
+    background-color: $primary;
+    color: $white;
+    border: none;
+}
+.btn-success {
+    background-color: $success;
+    color: $white;
+    border: none;
+}
+.btn-brown {
+    background-color: $brown;
+    color: $white;
+    border: none;
+}
+.btn-info {
+    background-color: $info;
+    color: $white;
+    border: none;
+}
+.btn-dark {
+    background-color: $dark;
+    color: $white;
+    border: none;
+}
+.btn-white{
+    background-color: $white;
+    color: $dark;
+    border: none;
+}
+.btn-gradient {
+    background-color: $backgrouond;
+    color: $white;
+    border: none;
+}
+.btn-outline-primary {
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+}
+.btn-outline-success {
+    background-color: transparent;
+    color: $success;
+    border: 1px solid $success;
+}
+.btn-outline-dark {
+    background-color: transparent;
+    color: $dark;
+    border: 1px solid $dark;
+}
+.btn-outline-brown {
+    background-color: transparent;
+    color: $brown;
+    border: 1px solid $brown;
+}
+.btn-outline-info {
+    background-color: transparent;
+    color: $info;
+    border: 1px solid $info;
+}
+.btn-text-primary {
+    background-color: transparent;
+    color: $primary;
+    border: none;
+}
+.btn-text-info {
+    background-color: transparent;
+    color: $info;
+    border: none;
+}
+.btn-text-success {
+    background-color: transparent;
+    color: $success;
+    border: none;
+}
+.btn-text-brown {
+    background-color: transparent;
+    color: $brown;
+    border: none;
+}
+.btn-rounded{
+    padding: 15px !important;
+    border-radius: 50% !important;
+    line-height: 1rem;
+    height: 80px;
+    font-size: 16px;
+    width: 80px;
+}
+h2{
+    text-align: center;
+    display: block;
+    &::first-letter{
+        font-size: 5rem;
+        color: #14a032;
+    }
+    &::first-line{
+        color: #be643c;
+    }
+}
+.kit-container {
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +121,7 @@
     align-items: center;
     flex-direction: row;
 
-    .col-12{
+    .col-12 {
         width: 100%;
         flex-basis: 100%;
         padding: 16px;
@@ -25,29 +131,32 @@
         flex-wrap: wrap;
         // flex: 0 0 auto;
 
-        button{
+        button {
             margin: 10px;
         }
     }
 
-    .col-12:nth-child(3){
+    .col-12:nth-child(3) {
         display: flex;
-        flex-direction: column;
-        flex-basis: 60%;
+        flex-direction: row;
+        flex-basis: 100%;
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 auto;
     }
-    .btn-icon{
+    .col-12:nth-child(14) {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .btn-icon {
         margin-left: 5px;
         font-size: 20px;
         line-height: 1;
     }
-
-
-
-
-
 
     @mixin btn-sm {
         width: auto;
@@ -55,112 +164,81 @@
         font-size: 14.88px;
         height: 36px;
         line-height: 1;
-        color: rgb(255, 255, 255);
-        border: none;
-        background:  $backgrouond;
     }
     @mixin btn-sm-text {
-        color:$green;
         border: none;
         font-size: 14.88px;
         height: 36px;
     }
 
     @mixin btn-sm-outline {
-        background: transparent;
-        color: $green ;
         height: 36px;
         line-height: 1;
-        border: 1px solid $green;
     }
 
-    @mixin  btn-lg{
+    @mixin btn-lg {
         height: 44px;
         font-size: 16.88px;
-        color: rgb(255, 255, 255);
         border: none;
-        background:  $backgrouond;
-    } 
-    @mixin  btn-lg-outline{
+    }
+    @mixin btn-lg-outline {
         height: 44px;
         font-size: 16.88px;
-        background: transparent;
-        color: $blue ;
-        border: none;
-        border: 1px solid $blue;
-    } 
-    @mixin  btn-lg-text{
+    }
+    @mixin btn-lg-text {
         height: 44px;
         font-size: 16.88px;
-        color: $blue ;
         border: none;
-    } 
+    }
 
     @mixin btn-block {
         width: 100%;
         max-width: 100%;
         display: block;
-        border: none;
         font-size: 16.5px;
-        color: rgb(255, 255, 255);
         line-height: 1;
         height: 44px;
-        background:  $backgrouond;
     }
 
-    @mixin  btn-lg{
+    @mixin btn-lg {
         height: 44px;
         font-size: 16.88px;
-        color: rgb(255, 255, 255);
-        border: none;
-        background:  $backgrouond;
-    } 
+    }
     @mixin rounded {
         border-radius: $rounded !important;
     }
-    
 
     // small series
-    .btn-small{
+    .btn-small {
         @include btn-sm;
     }
-    .btn-sm-outline{
-        @include btn-sm-outline
+    .btn-sm-outline {
+        @include btn-sm-outline;
     }
-    .btn-sm-text{
-        @include btn-sm-text
+    .btn-sm-text {
+        @include btn-sm-text;
     }
-    .rounded{
+    .rounded {
         @include rounded;
     }
-    .rounded-0{
+    .rounded-0 {
         border-radius: 0px !important;
     }
     // end
 
     // large series
-    .btn-lg{
+    .btn-lg {
         @include btn-lg;
         line-height: 1;
     }
-    .btn-lg-outline{
-        @include btn-lg-outline;
-     }
-     .btn-lg-text{
-        @include btn-lg-text;
-     }
-   
-    //  extra large
-    .btn-block{
-        @include btn-block;
-     }
-     .btn-block-outline{
-         @include btn-block;
-         border: 1px solid $green;
-         color: $green;
-         background: transparent;
-     }
 
+    //  extra large
+    .btn-block {
+        @include btn-block;
+    }
+    .btn-block-outline {
+        @include btn-block;
+    }
 
     .effect-btn {
         position: relative;
@@ -191,7 +269,7 @@
             opacity: 0;
             transition: opacity 0.2s;
         }
-    
+
         /* Ripple */
         &::after {
             content: "";
@@ -207,25 +285,26 @@
             transform: translate(-50%, -50%) scale(1);
             transition: opacity 1s, transform 0.5s;
         }
-    
+
         /* Hover, Focus */
         &:hover,
         &:focus {
-            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                0 1px 10px 0 rgba(0, 0, 0, 0.12);
         }
-    
+
         &::-moz-focus-inner {
             border: none;
         }
-    
+
         &:hover::before {
             opacity: 0.08;
         }
-    
+
         &:focus::before {
             opacity: 0.24;
         }
-    
+
         &:hover:focus::before {
             opacity: 0.3;
         }
@@ -234,13 +313,13 @@
             box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
                 0 3px 14px 2px rgba(0, 0, 0, 0.12);
         }
-    
+
         &:active::after {
             opacity: 0.32;
             transform: translate(-50%, -50%) scale(0);
             transition: transform 0s;
         }
-    
+
         /* Disabled */
         &:disabled {
             color: rgba(0, 0, 0, 0.38);
@@ -248,26 +327,20 @@
             box-shadow: none;
             cursor: initial;
         }
-    
+
         &:disabled::before {
             opacity: 0;
         }
-    
+
         &:disabled::after {
             opacity: 0;
         }
     }
-    .simple-btn{
+    .simple-btn {
         position: relative;
         border-radius: 4px;
-        width: auto;
-        max-width: 100%;
         font-size: 14.88px;
-        height: 36px;
         line-height: 1;
-        color: rgb(255, 255, 255);
-        border: none;
-        background:  $backgrouond-effect;
         padding: 0 20px;
         display: inline-flex;
         align-items: center;
@@ -281,21 +354,6 @@
         outline: none;
         cursor: pointer;
         margin-bottom: 20px;
-        transition: all .6s linear;
+        transition: all 0.6s linear;
     }
-    
-    .btn-outline{
-        background: transparent;
-        border: 1px solid $green;
-        color: #14a032;
-    }
-    .btn-text{
-        background: transparent;
-        color: #146efa;
-    }
-    
-    
 }
-
-
-

@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import "./signup.scss";
-import "../pages/button.scss"
+import "../pages/button.scss";
 
 
 const Signup = () => {
@@ -18,7 +18,7 @@ const Signup = () => {
                     <div className="face card-front" >
                         <div className="signin-form">
                             <form action="#">
-                                <h2>Sign in</h2>
+                                <h3>Sign in</h3>
 
                                 <div className="social-container">
                                     <a href="#" className="social" id="fb"><i className="fab fa-facebook-f"></i></a>
@@ -27,7 +27,7 @@ const Signup = () => {
                                 </div>
 
                                 <span className="formspan">or use your registered account</span>
-                                <input type="email" placeholder="Email" />
+                                <input type="email" placeholder="Email" autoComplete="false"/>
                                 <input type="password" placeholder="Password" />
                                 <span className="olspan forgot"><a href="#">Forgot your password?</a></span>
                                 <button className="formbtn">Sign in</button>
@@ -37,7 +37,7 @@ const Signup = () => {
                     
                     <div className="face card-back" >
                         <div className="panel">
-                            <h2>Welcome back!</h2>
+                            <h4>Welcome back!</h4>
                             <span className="panelspan">To keep connected with us please login with your personal info</span>
                             <button className="panelbtn signInBtn" onClick={handleToggle}>Sign In</button>
                         </div>
@@ -50,7 +50,7 @@ const Signup = () => {
                    
                     <div className="face card-front" >
                         <div className="panel">
-                            <h2>Hello, Friend!</h2>
+                            <h4>Hello, Friend!</h4>
                             <span className="panelspan">Enter your personal details and start journey with us</span>
                             <button className="panelbtn common signUpBtn"  onClick={handleToggle}>Sign Up</button>
                         </div>
@@ -59,7 +59,7 @@ const Signup = () => {
                     <div className="face card-back" >
                         <div className="signup-form">
                             <form action="#">
-                                <h2>Create Account</h2>
+                                <h3>Create Account</h3>
 
                                 <div className="social-container">
                                     <a href="#" className="social" id="fb"><i className="fab fa-facebook-f"></i></a>
